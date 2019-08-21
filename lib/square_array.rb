@@ -1,3 +1,16 @@
 def square_array(array)
-  # your code here
+  array.map do |num|
+    if (num.square?)
+      num
+    else
+      num ** 2
+    end
+  end
+  counter = 0
+
+  while counter < array.length do
+    puts array[counter]
+    counter +=1
+  end
+end
 end
